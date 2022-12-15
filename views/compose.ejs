@@ -1,0 +1,19 @@
+<!-- Header Include -->
+<%- include("partials/header") -%>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <div class="mb-3" style="margin: 3rem 0rem;">
+      <label for="title" class="form-label" style="font-size: 1.5rem;">Title</label>
+      <input type="text" name="title" class="form-control" placeholder="Enter the title of blog">
+    </div>
+    <div class="mb-3" style="margin: 3rem 0;">
+      <label for="blogContent" class="form-label" style="font-size: 1.5rem;">Post</label>
+    <textarea class="form-control" name="blogContent" cols="30" rows="5" placeholder="Start Writing Here..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="padding: 1rem 2rem;">Publish</button>
+  </form>
+
+  
+<!-- Footer Include -->
+<%- include("partials/footer") -%>
